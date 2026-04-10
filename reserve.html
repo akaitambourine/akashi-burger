@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVE | THE AKASHI BURGER & CRAFT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black tracking-tighter text-orange-600">AKASHI BURGER</a>
+            <div class="hidden md:flex space-x-12 text-sm font-bold tracking-widest">
+                <a href="index.html" class="hover:text-orange-600 transition-colors">TOP</a>
+                <a href="menu.html" class="hover:text-orange-600 transition-colors">MENU</a>
+                <a href="access.html" class="hover:text-orange-600 transition-colors">ACCESS</a>
+                <a href="reserve.html" class="text-orange-600">RESERVE</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-7xl font-black tracking-tighter mb-4 uppercase">Reservation</h1>
+            <p class="text-gray-500 tracking-widest">お席のご予約</p>
+        </div>
+    </header>
+
+    <section class="pb-32 px-6">
+        <div class="max-w-3xl mx-auto bg-white p-12 rounded-3xl shadow-xl border border-gray-100">
+            <form action="#" method="POST" class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Full Name</label>
+                        <input type="text" placeholder="明石 太郎" class="border-b-2 border-gray-200 py-3 focus:border-orange-600 outline-none transition-all">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Email Address</label>
+                        <input type="email" placeholder="example@mail.com" class="border-b-2 border-gray-200 py-3 focus:border-orange-600 outline-none transition-all">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Date</label>
+                        <input type="date" class="border-b-2 border-gray-200 py-3 focus:border-orange-600 outline-none transition-all">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Time</label>
+                        <select class="border-b-2 border-gray-200 py-3 focus:border-orange-600 outline-none transition-all bg-transparent">
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Guests</label>
+                        <select class="border-b-2 border-gray-200 py-3 focus:border-orange-600 outline-none transition-all bg-transparent">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>More than 5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2">Special Request</label>
+                    <textarea rows="4" placeholder="ご要望やお知らせがあれば入力してください" class="border-2 border-gray-100 rounded-xl p-4 focus:border-orange-600 outline-none transition-all"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-black text-white py-6 rounded-full font-black text-xl hover:bg-orange-600 transition-all transform active:scale-95 shadow-lg">
+                    CONFIRM RESERVATION
+                </button>
+            </form>
+            <p class="mt-10 text-center text-sm text-gray-400 leading-relaxed">
+                ※ 当日のご予約はお電話にて承っております。また、混雑時はお席の時間を90分とさせていただく場合がございます。予めご了承ください。
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
+            <div class="mb-12 md:mb-0">
+                <h2 class="text-4xl font-black tracking-tighter mb-6">AKASHI<br>BURGER</h2>
+                <p class="text-gray-400 max-w-xs leading-relaxed">
+                    明石市海岸通り 1-2-3<br>
+                    Open: 11:00 - 21:00 (L.O 20:30)<br>
+                    Closed: Tuesday
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-gray-800 text-center text-gray-600 text-xs">
+            &copy; 2024 THE AKASHI BURGER & CRAFT. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
